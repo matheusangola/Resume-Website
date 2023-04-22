@@ -3,10 +3,10 @@ body {
 }
 
 .header {
-padding: 7px; /* some padding */
-text-align: center; /* center the text */
+padding: 7px; 
+text-align: center; 
 background: #0A4D68;
-color: white; /* white text color */
+color: white; 
 }
 
 /* Increase the font size of the <h1> element */
