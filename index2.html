@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Matheus Alves</h1>
+        <p>Web Developer</p>
+    </div>
+    <div class="navbar">
+        <a href="index.html" id="left">Resume</a>
+        <a href="index2.html">HTML</a>
+        <a href="index3.html">CSS</a>
+        <a href="index4.html">JavaScript</a>
+    </div>
+    <!-- <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">HTML</a></li>
+        <li><a href="">CSS</a></li>
+        <li><a href="">JavaScript</a></li>
+    </ul> -->
+
+    <div class="row">
+        <div class="side">
+            <div class="index">
+            <button type="button" class="button" onclick="html()">HTML Resources</button>
+            <p id="resources"></p>
+            <p>
+            <h2>Index:</h2>
+            </p>
+            <p>
+                <a href="#HtmlAnchor1">Basic Tags</a>
+            </p>
+            <p>
+                <a href="#HtmlAnchor2">Body attributes</a>
+            </p>
+            <p>
+                <a href="#HtmlAnchor3">Text Tags</a>
+            </p>
+            <p>
+                <a href="#HtmlAnchor4">Links</a>
+            </p>
+            <p>
+                <a href="#HtmlAnchor5">Formatting</a>
+            </p>
+            <p>
+                <a href="#HtmlAnchor6">Lists</a>
+            </p>
+            <p>
+                <a href="#HtmlAnchor7">Graphical elements</a>
+            </p>
+            <p>
+                <a href="#HtmlAnchor8">Forms</a>
+            </p>
+            <p>
+                <a href="#HtmlAnchor9">Tables (use only for data layout - use CSS for page layout)</a>
+            </p>
+            <p>
+                <a href="#HtmlAnchor10">Table attributes (only use for email newsletters)</a>
+            </p>
+            <p>
+                <a href="#HtmlAnchor11">HTML5 input tag attributes</a>
+            </p>
+            </div>
+        </div>
+        <div class="main">
+            <h1 id="HtmlAnchor1">HTML CheatSheet</h1>
+            <h2>Basic tags:</h2>
+            <p><strong>&lt;html> &lt;/html></strong></p>
+            <p>Creates an HTML document</p>
+            <p><strong>&lt;head> &lt;/head></strong></p>
+            <p>Sets off the title & other info that isn't displayed</p>
+            <p><strong>&lt;body> &lt;/body></strong></p>
+            <p>Sets off the visible portion of the document</p>
+            <p><strong>&lt;title> &lt;/title></strong></p>
+            <p>Puts name of the document in the title bar; when bookmarking pages, this is what is bookmarked</p> 
+            <h2 id="HtmlAnchor2">Body attributes (only used in email newsletters)</h2>
+            <p><strong>&lt;body bgcolor=?>&lt;/body></strong></p>
+            Sets background color, using name or hex value
+            <p><strong>&lt;body text=?>&lt;/body></strong></p>
+            Sets text color, using name or hex value
+            <p><strong>&lt;body link=?>&lt;/body></strong></p>
+            Sets color of links, using name or hex value
+            <p><strong>&lt;body vlink=?>&lt;/body></strong></p>
+            Sets color of visited links, using name or hex value
+            <p><strong>&lt;body alink=?>&lt;/body></strong></p>
+            Sets color of active links (while mouse-clicking)
+            <h2 id="HtmlAnchor3">Text Tags</h2>
+            <p><strong>&lt;pre> &lt;/pre></strong></p>
+            Creates preformatted text
+            <p><strong>&lt;h1> &lt;/h1> --> <h6> </h6></strong>
+            Creates headlines -- H1=largest, H6=smallest
+            <p><strong>&lt;b> &lt;/b></strong></p>
+            Creates bold text (should use &lt;strong> instead)
+            <p><strong>&lt;i> &lt;/i></strong></p>
+            Creates italicized text (should use &lt;em> instead)
+            <p><strong>&lt;tt> &lt;/tt></strong></p>
+            Creates typewriter-style text
+            <p><strong>&lt;code> &lt;/code></strong></p>
+            Used to define source code, usually monospace
+            <p><strong>&lt;cite> &lt;/cite></strong></p>
+            Creates a citation, usually processed in italics
+            <p><strong>&lt;address> &lt;/address></strong></p>
+            Creates address section, usually processed in italics
+            <p><strong>&lt;em> &lt;/em></strong></p>
+            Emphasizes a word (usually processed in italics)
+            <p><strong>&lt;strong> &lt;/strong></strong></p>
+            Emphasizes a word (usually processed in bold)
+            <p><strong>&lt;font size=?> &lt;/font></strong></p>
+            Sets size of font - 1 to 7 (should use CSS instead)
+            <p><strong>&lt;font color=?> &lt;/font></strong></p>
+            Sets font color (should use CSS instead)
+            <p><strong>&lt;font face=?> &lt;/font></strong></p>
+            Defines the font used (should use CSS instead)
+            <h2 id="HtmlAnchor4">Links</h2>
+            <p><strong>&lt;a href="URL">clickable text&lt;/a></strong></p>
+            Creates a hyperlink to a Uniform Resource Locator
+            <p><strong>&lt;a href="mailto:EMAIL_ADDRESS">clickable text&lt;/a></strong></p>
+            Creates a hyperlink to an email address
+            <p><strong>&lt;a name="NAME">&lt;/a></strong></p>
+            Creates a target location within a document
+            <p><strong>&lt;a href="#NAME">clickable text&lt;/a></strong></p>
+            Creates a link to that target location
+            <h2 id="HtmlAnchor5">Formatting</h2>
+            <p><strong>&lt;p> &lt;/p></strong></p>
+            Creates a new paragraph
+            <p><strong>&lt;br></strong></p>
+            AInserts a line break (carriage return)
+            <p><strong>&lt;blockquote> &lt;/blockquote></strong></p>
+            Puts content in a quote - indents text from both sides
+            <p><strong>&lt;div> &lt;/div></strong></p>
+            Used to format block content with CSS
+            <p><strong>&lt;span> &lt;/span></strong></p>
+            Used to format inline content with CSS
+            <h2 id="HtmlAnchor6">Lists</h2>
+            <p><strong>&lt;ul> &lt;/ul></strong></p>
+            Creates an unordered list
+            <p><strong>&lt;ol start=?> &lt;/ol></strong></p>
+            Creates an ordered list (start=xx,
+            where xx is a counting number)
+            <p><strong>&lt;li> &lt;/li></strong></p>
+            Encompasses each list item
+            <p><strong>&lt;dl> &lt;/dl></strong></p>
+            Creates a definition list
+            <p><strong>&lt;dt>&lt;/dt></strong></p>
+            Precedes eachdefintion term
+            <p><strong>&lt;dd>&lt;/dd></strong></p>
+            Precedes eachdefintion
+            <h2 id="HtmlAnchor7">Graphical elements</h2>
+            <p><strong>&lt;hr></strong></p>
+            Inserts a horizontal rule
+            <p><strong>&lt;hr size=?></strong></p>
+            Sets size (height) of horizontal rule
+            <p><strong>&lt;hr width=?></strong></p>
+            Sets width of rule (as a % or absolute pixel length)
+            <p><strong>&lt;hr noshade></strong></p>
+            Creates a horizontal rule without a shadow
+            <p><strong>&lt;img src="URL" /></strong></p>
+            Adds image; it is a separate file located at the URL
+            <p><strong>&lt;img src="URL" align=?></strong></p>
+            Aligns image left/right/center/bottom/top/middle (use CSS)
+            <p><strong>&lt;img src="URL" border=?></strong></p>
+            Sets size of border surrounding image (use CSS)
+            <p><strong>&lt;img src="URL" height=?></strong></p>
+            Sets height of image, in pixels
+            <p><strong>&lt;img src="URL" width=?></strong></p>
+            Sets width of image, in pixels
+            <p><strong>&lt;img src="URL" alt=?></strong></p>
+            Sets the alternate text for browsers that can't
+            process images (required by the ADA)
+            <h2 id="HtmlAnchor8">Forms</h2>
+            <p><strong>&lt;form> &lt;/form></strong></p>
+            Defines a form
+            <p><strong>&lt;select multiple name=? size=?> &lt;/select></strong></p>
+            Creates a scrolling menu. Size sets the number of
+            menu items visible before user needs to scroll.
+            <p><strong>&lt;select name=?> &lt;/select></strong></p>
+            Creates a pulldown menu
+            <p><strong>&lt;option>&lt;/option></strong></p>
+            Sets off each menu item
+            <p><strong>&lt;textarea name=? cols="x" rows="y">&lt;/textarea></strong></p>
+            Creates a text box area. Columns set the width;
+            rows set the height.
+            <p><strong>&lt;input type="checkbox" name=? value=?></strong></p>
+            Creates a checkbox.
+            <p><strong>&lt;input type="checkbox" name=? value=? checked></strong></p>
+            Creates a checkbox which is pre-checked.
+            <p><strong>&lt;input type="radio" name=? value=?></strong></p>
+            Creates a radio button.
+            <p><strong>&lt;input type="radio" name=? value=? checked></strong></p>
+            Creates a radio button which is pre-checked.
+            <p><strong>&lt;input type="text" name=? size=?></strong></p>
+            Creates a one-line text area. Size sets length, in
+            characters.
+            <p><strong>&lt;input type="submit" value=?></strong></p>
+            Creates a submit button. Value sets the text in the
+            submit button.
+            <p><strong>&lt;input type="image" name=? src=? border=? alt=?></strong></p>
+            Creates a submit button using an image.
+            <p><strong>&lt;input type="reset"></strong></p>
+            Creates a reset button
+            <h2 id="HtmlAnchor9">Tables (use only for data layout - use CSS for page layout)</h2>
+            <p><strong>&lt;table> &lt;/table></strong></p>
+            Creates a table
+            <p><strong>&lt;tr> &lt;/tr></strong></p>
+            Sets off each row in a table
+            <p><strong>&lt;td> &lt;/td></strong></p>
+            Sets off each cell in a row
+            <p><strong>&lt;th> &lt;/th></strong></p>
+            Sets off the table header (a normal cell with bold,
+            centered text)
+            <h2 id="HtmlAnchor10">Table attributes (only use for email newsletters)</h2>
+            <p><strong>&lt;table border=?>&lt;/table></strong></p>
+            Sets the width of the border around table cells
+            <p><strong>&lt;table cellspacing=?>&lt;/table></strong></p>
+            Sets amount of space between table cells
+            <p><strong>&lt;table cellpadding=?>&lt;/table></strong></p>
+            Sets amount of space between a cell's border and
+            its contents
+            <p><strong>&lt;table width=?>&lt;/table></strong></p>
+            Sets width of the table in pixels or as a percentage
+            <p><strong>&lt;tr align=?>&lt;/tr></strong></p>
+            Sets alignment for cells within the row
+            (left/center/right)
+            <p><strong>&lt;td align=?>&lt;/td></strong></p>
+            Sets alignment for cells (left/center/right)
+            <p><strong>&lt;tr valign=?>&lt;/tr></strong></p>
+            Sets vertical alignment for cells within the row
+            (top/middle/bottom)
+            <p><strong>&lt;td valign=?>&lt;/td></strong></p>
+            Sets vertical alignment for cell (top/middle/bottom)
+            <p><strong>&lt;td rowspan=?>&lt;/td></strong></p>
+            Sets number of rows a cell should span (default=1)
+            <p><strong>&lt;td colspan=?>&lt;/td></strong></p>
+            Sets number of columns a cell should span
+            <p><strong>&lt;td nowrap>&lt;/td></strong></p>
+            Prevents lines within a cell from being broken to fit
+            <h2 id="HtmlAnchor11">HTML5 input tag attributes</h2>
+            <p><strong>&lt;input type="email" name=?></strong></p>
+            Sets a single-line textbox for email addresses
+            <p><strong>&lt;input type="url" name=?></strong></p>
+            Sets a single-line textbox for URLs
+            <p><strong>&lt;input type="number" name=?></strong></p>
+            Sets a single-line textbox for a number
+            <p><strong>&lt;input type="range" name=?></strong></p>
+            Sets a single-line text box for a range of numbers
+            <p><strong>&lt;input type="date/month/week/time" name=?></strong></p>
+            Sets a single-line text box with a calendar
+            showing the date/month/week/time
+            <p><strong>&lt;input type="search" name=?></strong></p>
+            Sets a single-line text box for searching
+            <p><strong>&lt;input type="color" name=?></strong></p>
+            Sets a single-line text box for picking a color 
+        </div>
+    </div>
+<!--
+    <h1>Matheus Alves</h1>
+    <h3>Web Developer</h3>
+-->
+
+<div class="footer">
+    <a href="https://www.instagram.com/matheusangola/" target="_blank" class="fa fa-instagram"></a>
+    <a href="https://www.linkedin.com/in/matheus-alves-290b42193/" target="_blank" class="fa fa-linkedin"></a>
+    <a href="https://www.github.com/matheusangola" target="_blank" class="fa fa-github"></a>
+</div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

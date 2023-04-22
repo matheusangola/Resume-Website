@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Matheus Alves</h1>
+        <p>Web Developer</p>
+    </div>
+    <div class="navbar">
+        <a href="index.html" id="left">Resume</a>
+        <a href="index2.html">HTML</a>
+        <a href="index3.html">CSS</a>
+        <a href="index4.html">JavaScript</a>
+    </div>
+    <!-- <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">HTML</a></li>
+        <li><a href="">CSS</a></li>
+        <li><a href="">JavaScript</a></li>
+    </ul> -->
+
+    <div class="row">
+        <div class="side">
+            <div class="index">
+                <button type="button" class="button" onclick="javaScript()">HTML Resources</button>
+                <p id="resources"></p>
+                <p>
+                <h2>Index:</h2>
+                </p>
+                <p>
+                    <a href="#HtmlAnchor1">Value Types</a>
+                </p>
+                <p>
+                    <a href="#HtmlAnchor2">Operators</a>
+                </p>
+                <p>
+                    <a href="#HtmlAnchor3">Assign­ments</a>
+                </p>
+                <p>
+                    <a href="#HtmlAnchor4">Adding to an array</a>
+                </p>
+                <p>
+                    <a href="#HtmlAnchor5">Misc</a>
+                </p>
+                <p>
+                    <a href="#HtmlAnchor6">Event Handlers</a>
+                </p>
+                <p>
+                    <a href="#HtmlAnchor7">Compar­isons</a>
+                </p>
+            </div>
+        </div>
+        <div class="main">
+            <h1 href="#HtmlAnchor1">JavaScript CheatSheet</h1>
+            <h2>Value Types</h2>
+            <p><strong>Number</strong><br>Any numeric value</p> 
+            
+            <p><strong>String</strong><br>Characters inside quote marks</p>
+            
+            <p><strong>Boolean</strong><br>True or False</p>
+            
+            <p><strong>Null</strong><br>Empty and meanin­gless</p>
+
+            <p><strong>Object</strong><br>Any value associated with the object</p>
+
+            <p><strong>Function</strong><br>Value returned by a function</p>
+
+            <h2 href="#HtmlAnchor2">Operators</h2>
+
+            <p><strong>x + y (numeric)</strong><br>Adds x and y together</p>
+
+            <p><strong>x + y (string)</strong><br>Concat­inates x and y together</p>
+            
+            <p><strong>x - y</strong><br>Subtracts y from x</p>
+
+            <p><strong>x * y</strong><br>Multiplies x and y together</p>
+
+            <p><strong>x / y</strong><br>Divides x by y</p>
+
+            <p><strong>x % y</strong><br> Modulus: The remainder when x is divided by y</p>
+
+            <p><strong>x++, ++x</strong><br> Adds one to x</p>
+
+            <p><strong>x--, --x</strong><br> Subtracts one from x</p>
+
+            <p><strong>-x</strong><br> Reverses the sign on x</p>
+
+            <h2 href="#HtmlAnchor3">Assign­ments</h2>
+            
+            <p><strong>x = y</strong><br>Sets x to the value of y</p>
+
+            <p><strong>x += y</strong><br>Same as x = x + y</p>
+
+            <p><strong>x -= y</strong><br>Same as x = x - y</p>
+
+            <p><strong>x *= y</strong><br>Same as x = x * y</p>
+
+            <p><strong>x /= y</strong><br>Same as x = x / y</p>
+
+            <p><strong>x %= y</strong><br>Same as x = x % y</p>
+
+            <h2 href="#HtmlAnchor4">Adding to an array</h2>
+            
+            <p><strong>.length property</strong><br>Adds one value to the end of an array</p> 
+            
+            <p><strong>push()</strong><br>Adds one or more items to the end of an array</p>
+            
+            <p><strong>unshift()</strong><br>Adds one or more items to the beginning of an array.</p>
+            
+            <h2 href="#HtmlAnchor5">Misc</h2>
+            <p><strong>parseInt()</strong><br>Takes a value and tries to convert it to an integer</p>
+            
+            <p><strong>isNaN()</strong><br>Returns true if something is not a number.</p>
+
+            <p><strong>setTim­eout()</strong><br>Specify that am action should occur on a particular schedule</p>
+
+            <p><strong>Math.floor</strong><br>Rounds a number down</p>
+
+            <p><strong>Math.r­andom</strong><br>Generates a random number between 0 and 1</p>
+
+            <p><strong>getEle­men­tsB­yTa­gName()</strong><br>Accesses the element by the tag</p>
+
+            <p><strong>getEle­men­tById()</strong><br>Accesses the element by the ID</p>
+
+            <p><strong>getEle­men­tsB­yCl­ass­Name()</strong><br>Accesses the element by the class</p>
+            
+            <p><strong>elemen­t.i­nne­rHTML</strong><br>returns all the HTML between the opening and closing tags</p>
+
+            <p><strong>elemen­t.n­odeType</strong><br>property, returns the number of the node type</p>
+
+            <p><strong>elemen­t.c­hil­dNodes</strong><br>A node list of child nodes that are indexed numeri­cally, and appear in source order.</p>
+
+            <p><strong>elemen­t.c­hil­dNo­des.length</strong><br>Returns the number of child nodes of the element</p>
+            
+            <h2 href="#HtmlAnchor6">Event Handlers</h2>
+
+            <p><strong>onabort</strong><br>The user aborted loading the page</p>
+
+            <p><strong>onblur</strong><br>The user left the object</p>
+
+            <p><strong>onchange</strong><br>The user changed the object</p>
+
+            <p><strong>onclick</strong><br>The user clicked an object</p>
+
+            <p><strong>onerror</strong><br>The script encoun­tered an error</p>
+
+            <p><strong>onfocus</strong><br>The user made an object active</p>
+
+            <p><strong>onload</strong><br>The object finished loading</p>
+
+            <p><strong>onmous­eover</strong><br>The cursor moved over an object</p>
+
+            <p><strong>onmouseout</strong><br>The cursor moved off an object</p>
+
+            <p><strong>onselect</strong><br>The user selected the contents of an object</p>
+
+            <p><strong>onsubmit</strong><br>The user submitted a form</p>
+
+            <p><strong>onunload</strong><br>The user left the page</p>
+
+            <p><strong>onmove</strong><br>The window is moved</p>
+
+            <p><strong>onmous­edown</strong><br>A mouse button is pressed down</p>
+
+            <p><strong>onmouseup</strong><br>A mouse button is released</p>
+
+            <p><strong>onmous­emove</strong><br>The mouse moves</p>
+
+            <p><strong>ondblclick</strong><br>A double click of a mouse button</p>
+
+            <p><strong>onclick</strong><br>A single click (down and then up) of a mouse button</p>
+
+            <p><strong>onreset</strong><br>A reset button is clicked on a form</p>
+
+            <p><strong>onkeydown</strong><br>Triggered when a key is pressed down</p>
+
+            <p><strong>onkeyup</strong><br>Triggered when a key is released</p>
+
+            <p><strong>onkeypress</strong><br>Triggered when a key is pressed and then released</p>
+
+            <h2 href="#HtmlAnchor7">Compar­isons</h2>
+            
+            <p><strong>x == y</strong><br>Returns true if x and y are equal</p>
+
+            <p><strong>x === y</strong><br>Returns true if x and y are identical</p>
+
+            <p><strong>x != y</strong><br>Returns true if x and y are not equal</p>
+
+            <p><strong>x !== y</strong><br>Returns true if x and y are not identical</p>
+
+            <p><strong>x > y</strong><br>Returns true if x is greater than y</p>
+
+            <p><strong>x >= y</strong><br>Returns true if x is greater than or equal to y</p>
+
+            <p><strong>x < y</strong><br>Returns true if x is less than y</p>
+
+            <p><strong>x <= y</strong><br>Returns true if x is less than or equal to y</p>
+
+            <p><strong>x && y</strong><br>Returns true if both x and y are true</p>
+
+            <p><strong>x || y</strong><br>Returns true if either x or y are true</p>
+
+            <p><strong>!x</strong><br>Returns true if x is false</p>
+            
+            <p></p>
+        </div>
+    </div>
+<!--
+    <h1>Matheus Alves</h1>
+    <h3>Web Developer</h3>
+-->
+
+<div class="footer">
+    <a href="https://www.instagram.com/matheusangola/" target="_blank" class="fa fa-instagram"></a>
+    <a href="https://www.linkedin.com/in/matheus-alves-290b42193/" target="_blank" class="fa fa-linkedin"></a>
+    <a href="https://www.github.com/matheusangola" target="_blank" class="fa fa-github"></a>
+</div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

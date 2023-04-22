@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Matheus Alves</h1>
+        <p>Web Developer</p>
+    </div>
+    <div class="navbar">
+        <a href="index.html" id="left">Resume</a>
+        <a href="index2.html">HTML</a>
+        <a href="index3.html">CSS</a>
+        <a href="index4.html">JavaScript</a>
+    </div>
+    <!-- <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">HTML</a></li>
+        <li><a href="">CSS</a></li>
+        <li><a href="">JavaScript</a></li>
+    </ul> -->
+
+    <div class="row">
+        <div class="side">
+            <div class="index">
+                <button type="button" class="button" onclick="css()">HTML Resources</button>
+                <p id="resources"></p>
+                <p>
+                <h2>Index:</h2>
+                </p>
+                <p>
+                    <a href="#HtmlAnchor1">Font Properties</a>
+                </p>
+                <p>
+                    <a href="#HtmlAnchor2">Color and Background Properties</a>
+                </p>
+                <p>
+                    <a href="#HtmlAnchor3">Text Properties</a>
+                </p>
+                <p>
+                    <a href="#HtmlAnchor4">Classification Properties</a>
+                </p>
+                <p>
+                    <a href="#HtmlAnchor5">Box Properties</a>
+                </p>
+            </div>
+        </div>
+        <div class="main">
+            <h1  id="HtmlAnchor1">CSS CheatSheet</h1>
+            <h2>Font Properties</h2>
+            <p><i>Font-Family</i><br>Changes the font family of certain words, sentences,
+                paragraphs, etc. <br> <strong>P { font-family: "New Century Schoolbook", Times, serif; }</strong></p>
+            
+            
+            <p><i>Font-Style</i><br>Changes text: normal, oblique, and italics. <br><strong>H1 { font-style: oblique; }
+            <br> P { font-style: normal; }</strong></p>
+            
+            <p><i>Font-Variant</i><br>Used to display font in normal or small-caps. <br><strong>SPAN { font-variant: small-caps; }</strong></p>
+            
+            <p><i>Font-Weight</i><br>Used to specify the weight of the font. <br><strong>H1 { font-weight: 800; } or P { font-weight: normal; }</strong></p>
+            
+            <p><i>Font-Size</i><br>Used to modify the size of the displayed font.<br><strong>H1 { font-size: large; } or P { font-size: 12pt; } <br>
+                LI { font-size: 90%; } <br>
+                STRONG { font-size: larger; }</strong></p>
+            
+            <p><i>Font</i><br>Used to combine all properties of fonts. <br><strong>P { font: italic bold 12pt/14pt Times, serif; }</strong></p>
+            
+            <h2 id="HtmlAnchor2">Color and Background Properties</h2>
+            
+            <p><i>Color</i><br>Changes the color of text. <br><strong>H1 { color: blue; } or H2 { color: #000080; }</strong></p>
+            
+            <p><i>Background-Color</i><br>Sets the background color of an element. <br><strong>BODY { background-color: white; } <br>
+                H1 { background-color: #000080; }</strong></p>
+            
+            <p><i>Background-Image</i><br>Sets the background image of an element. <br><strong>BODY { background-image: url(/images/foo.gif); }
+                <br> P { background-image: url(http://www.htmlhelp.com/bg.png); }</strong></p>
+            
+            <p><i>Background-Repeat</i><br>Determines how a specified background image is repeated. <br>The repeat-x value will repeat the image horizontally while the
+                repeat-y value will repeat the image vertically. <br><strong>BODY { background: white url(candybar.gif); <br>
+                    background-repeat: repeat-x; }</strong></p>
+            
+            <p><i>Background-Attachment</i> <br>Determines if a specified background image will scroll with the
+                content or be fixed with regard to the canvas. <br><strong>BODY { background: white url(candybar.gif); <br>
+                    background-attachment: fixed; }</strong></p>
+            
+            <p><i>Background</i><br>Used to combine all properties of background. <br><strong>BODY { background: white url(http://www.htmlhelp.com/foo.gif); } <br>
+                BLOCKQUOTE { background: #7fffd4; } <br>
+                P { background: url(../backgrounds/pawn.png) #f0f8ff fixed; } <br>
+                TABLE { background: red url(leaves.jpg) no-repeat bottom right; }</strong></p>
+            
+            
+            <h2 id="HtmlAnchor3">Text Properties</h2>
+            
+            <p><i>Word-Spacing</i><br>Defines an additional amount of space between words.<br><strong>P EM { word-spacing: 0.4em; } <br>
+                P.note { word-spacing: -0.2em; }</strong></p>
+            
+            <p><i>Letter-Spacing</i><br>Defines an additional amount of space between characters.<br><strong>H1 { letter-spacing: 0.1em; } <br>
+                P.note { letter-spacing: -0.1em; }</strong></p>
+            
+            
+            <p><i>Text-Decoration</i><br>Allows text to be decorated through one of five properties: <br>
+                underline, overline, line-through, blink, none.<br><strong>A:link, A:visited, A:active { text-decoration: none; }</strong></p>
+            
+            
+            <p><i>Vertical-Align</i><br>Used to alter the vertical positioning of an inline element,
+                relative to its parent element or to the element's line.<br><strong>IMG.middle { vertical-align: middle; } <br>
+                    IMG { vertical-align: 50%; } <br>
+                    .exponent { vertical-align: super; }</strong></p>
+            
+            
+            <p><i>Text-Transform</i><br>Allows for capitalizing the first letter of each word (capitalize),
+                capitalizing all letters of a word (uppercase), using all small
+                letters in each word(lowercase), and the inital value(none).<br><strong>H1 { text-transform: uppercase; } <br>
+                    H2 { text-transform: capitalize; }</strong></p>
+            
+            
+            <p><i>Text-Align</i><br>Used to justify text left, center, right, and justify.<br><strong>H1 { text-align: center; } <br>
+                P.newspaper { text-align: justify; }</strong></p>
+            
+            
+            <p><i>Text-Indent</i><br>Used to specify the amount of indentation prior to the first line
+                of text.<br><strong>P { text-indent: 5em; }</strong></p>
+            
+            
+            <p><i>Line-Height</i><br>Used to control the spacing between baselines of text.<br><strong>P { line-height: 200%; }</strong></p>
+            
+            
+            <h2 id="HtmlAnchor4">Classification Properties</h2>
+            
+            <p><i>List-Style-Type</i><br>Specifies the type of list-item marker, and is used if list-styleimage is none or if image loading is turned off.<br><strong>LI.square { list-style-type: square; } <br>
+                UL.plain { list-style-type: none; } <br>
+                OL { list-style-type: upper-alpha; } /* A B C D E etc. */ <br>
+                OL OL { list-style-type: decimal; } /* 1 2 3 4 5 etc. */ <br>
+                OL OL OL { list-style-type: lower-roman; } /* i ii iii iv v etc. */</strong></p>
+            
+            
+            <p><i>List-Style-Image</i><br>Specifies the image that will be used as list-item marker when
+                image loading is turned on, replacing the marker specified in
+                the list-style-type property.<br><strong>UL.check { list-style-image: url(/LI-markers/checkmark.gif); } <br>
+                    UL LI.x { list-style-image: url(x.png); }</strong></p>
+            
+            
+            <p><i>List-Style-Position</i><br>Determines where the marker is placed in regard to the list
+                item. If the value inside is used, the lines will wrap under the
+                marker instead of being indented. outside is default.<br><strong>UL { list-style-position: inside; }</strong></p>
+
+            <h2 id="HtmlAnchor5">Box Properties</h2>
+                       
+            <p><i>Margin-Top</i><br>Sets the top margin of an element by specifying a length or a
+                percentage.<br><strong>BODY { margin-top: 5pt; }</strong></p>
+            
+            <p><i>Margin-Right</i><br>Sets the right margin of an element by specifying a length or a
+                percentage.<br><strong>P.narrow { margin-right: 50%; }</strong></p>
+            
+            <p><i>Margin-Bottom</i><br>sets the bottom margin of an element by specifying a length or
+                a percentage.<br><strong>DT { margin-bottom: 3em; }</strong></p>
+            
+            <p><i>Margin-Left</i><br>sets the left margin of an element by specifying a length or a
+                percentage.<br><strong>ADDRESS { margin-left: 50%; }</strong></p>
+            
+            <p><i>Margin</i><br>Sets the margins of an element by specifying top, bottom, left
+                and right margins -- all either specifying length or percentage.<br><strong>BODY { margin: 5em; } /* all margins 5em */ <br>
+                    P { margin: 2em 4em; } /* top & bottom 2em, left & right 4em */ <br>
+                    DIV { margin: 1em 2em 3em 4em; } <br>
+                    /* top margin 1em, right 2em, bottom 3em, left 4em */</strong></p>
+            
+            <p><i>Padding-Top</i><br>Describes the amount of space between the top border and
+                the content of the selector.<br><strong>P { padding-top: 20%; }</strong></p>
+            
+            <p><i>Padding-Right</i><br>Describes the amount of space between the right border and
+                the content of the selector.<br><strong>P { padding-right: 20 px; }</strong></p>
+            
+            <p><i>Padding-Bottom</i><br>Describes the amount of space between the bottom border
+                and the content of the selector.<br><strong>P { padding-bottom: 5 em; }</strong></p>
+            
+            <p><i>Padding-Left</i><br>Describes the amount of space between the left border and
+                the content of the selector.<br><strong>P { padding-left: 15 pt; }</strong></p>
+            
+            <p><i>Padding</i><br>Shorthand for the padding-top, padding-right, padding-bottom,
+                and padding-left properties.<br><strong>BLOCKQUOTE { padding: 2em 4em 5em 4em; }</strong></p>
+            
+            <p><i>Border-Top-Width</i><br>Used to specify the width of an element's top border.<br><strong>P { border-top: 20%; }</strong></p>
+            
+            <p><i>Border-Right-Width</i><br>Used to specify the width of an element's right border.<br><strong>P { border-right: 20%; }</strong></p>
+            
+            <p><i>Border-Bottom-Width</i><br>Used to specify the width of an element's bottom border.<br><strong>P { border-bottom: 20%; }</strong></p>
+            
+            <p><i>Border-Left-Width</i><br>Used to specify the width of an element's left border.<br><strong>P { border-left: 20%; }</strong></p>
+            
+            <p><i>Border-Width</i><br>Used to set the width of an element's border (either all
+                borders, or specifying top border, right border, bottom border,
+                left border).<br><strong>P { border-width: 20%; } <br>
+                P { border-width: 10px 5px 10px 5px; }</strong></p>
+            
+            <p><i>Border-Color</i><br>Used to set the color of an element's border.<br><strong>P { border-color: #00000; }</strong></p>
+            
+            <p><i>Border-Style</i><br>Sets style of a border - none, dotted, dashed, solid, double.<br><strong>P { border-style: dotted; }</strong></p>
+            
+            <p><i>Border-Top</i><br>Sets the width, style, and color of an element's top border.<br><strong>P { border-top: 10px, red, double; }</strong></p>
+            
+            <p><i>Border-Right</i><br>Sets the width, style, and color of an element's right border.<br><strong>P { border-right: 10px, red, double; }</strong></p>
+            
+            <p><i>Border-Bottom</i><br>Sets the width, style, and color of an element's bottom border.<br><strong>P { border-bottom: 10px, red, double; }</strong></p>
+            
+            <p><i>Border-Left</i><br>Sets the width, style, and color of an element's left border.<br><strong>P { border-left: 10px, red, double; }</strong></p>
+            
+            <p><i>Border</i><br>Sets the width, style, and color of an element's border.<br><strong>P { border: 10px, red, double; }</strong></p>
+            
+            <p><i>Width</i><br>Each block-level or replaced element can be given a width,
+                specified as a length, a percentage, or as auto.<br><strong>P { width: 15px; } <br>
+                    H1 { width: 35%; } <br>
+                    .foo { width: auto; }</strong></p>
+            
+            <p><i>Height</i><br>Each block-level or replaced element can be given a height,
+                specified as a length or as auto.<br><strong>P { height: 15px; } <br>
+                    H1 { height: 35%; } <br>
+                    .foo { height: auto; }</strong></p>
+            
+            <p><i>Float</i><br>Allows text to wrap around an element (left, right, none).<br><strong>P { float: left; } <br>
+                H1 { float: right; } <br>
+                .foo { float: none; }</strong></p>
+            
+            
+            <p><i>Clear</i><br>Specifies whether an element allows floating elements to its
+                sides (left, right, none).<br><strong>P { clear: left; } <br>
+                    H1 { clear: right; } <br>
+                    .foo { clear: none; }</strong></p>
+
+            <p></p>
+        </div>
+    </div>
+<!--
+    <h1>Matheus Alves</h1>
+    <h3>Web Developer</h3>
+-->
+
+<div class="footer">
+    <a href="https://www.instagram.com/matheusangola/" target="_blank" class="fa fa-instagram"></a>
+    <a href="https://www.linkedin.com/in/matheus-alves-290b42193/" target="_blank" class="fa fa-linkedin"></a>
+    <a href="https://www.github.com/matheusangola" target="_blank" class="fa fa-github"></a>
+</div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
